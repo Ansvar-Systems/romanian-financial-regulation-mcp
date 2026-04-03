@@ -1,32 +1,37 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "eu.ansvar/romanian-financial-regulation-mcp",
-  "description": "Query ASF norme on capital markets, BNR regulamente on prudential requirements, and enforcement actions",
+  "description": "Romanian financial regulation MCP server — ASF norme on capital markets, BNR regulamente on prudential requirements, and enforcement actions",
   "repository": {
     "url": "https://github.com/Ansvar-Systems/romanian-financial-regulation-mcp",
     "source": "github"
   },
   "homepage": "https://ansvar.eu",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "Apache-2.0",
   "keywords": [
-    "asf",
-    "bnr",
-    "romanian-financial-regulation",
-    "capital-markets",
-    "prudential",
+    "financial regulation",
+    "romania",
+    "regulation",
     "compliance",
-    "enforcement",
-    "mcp",
-    "ansvar"
+    "mcp"
   ],
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@ansvar/romanian-financial-regulation-mcp",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "transport": {
         "type": "stdio"
+      }
+    },
+    {
+      "registryType": "npm",
+      "identifier": "@ansvar/romanian-financial-regulation-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "streamable-http",
+        "url": "https://mcp.ansvar.eu/romanian-financial-regulation/mcp"
       }
     }
   ]
